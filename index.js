@@ -11,11 +11,11 @@ console.log('its working');
 (d) Away Team goals for 2014 world cup final
 (e) Winner of 2014 world cup final */
 
-
+//a
 function getHtN2014(arr){
     var thatHomeTeam = arr["Home Team Name"];
         const home2014WorldCupFinal = thatHomeTeam.map(function(item){
-            if(arr["Year"] = 2014 && arr["Stage"] == "Final"){
+            if(arr["Year"] === 2014 && arr["Stage"] === "Final"){
                 return thatHomeTeam
             }else(console.log("whoops"));
             
@@ -24,8 +24,27 @@ function getHtN2014(arr){
 });
 return home2014WorldCupFinal;
 }
-console.log(getHtN2014(fifaData))
-console.log()
+//a
+console.log(getHtN2014(fifaData));
+
+//b
+function getAtN2014(arr){
+    var thatAwayTeam = arr["Away Team Name"];
+        const home2014WorldCupFinal = thatAwayTeam.map(function(item){
+            if(arr["Year"] === 2014 && arr["Stage"] === "Final"){
+                return thatHomeTeam
+            }else(console.log("whoops"));
+            
+
+        return thatHomeTeam;
+});
+return home2014WorldCupFinal;
+}
+//b
+console.log(getAtN2014(fifaData));
+
+
+//c
 console.log()
 console.log()
 
