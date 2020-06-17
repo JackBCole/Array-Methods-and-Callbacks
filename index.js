@@ -1,5 +1,4 @@
 import { fifaData } from './fifa.js';
-console.log(fifaData);
 
 console.log('its working');
 // ⚽️ M  V P ⚽️ //
@@ -12,12 +11,20 @@ console.log('its working');
 (d) Away Team goals for 2014 world cup final
 (e) Winner of 2014 world cup final */
 
-// const home2014WorldCupFinal = fifaData.map(function(item){
-    
-// return item.push(["Home Team Name"]);
-//});
-//console.log(fifaData.MatchID[300186474].HomeTeamName["Brazil"])
-//console.log(home2014WorldCupFinal);
+
+function getHtN2014(arr){
+    var thatHomeTeam = arr["Home Team Name"];
+        const home2014WorldCupFinal = thatHomeTeam.map(function(item){
+            if(arr["Year"] = 2014 && arr["Stage"] == "Final"){
+                return thatHomeTeam
+            }else(console.log("whoops"));
+            
+
+        return thatHomeTeam;
+});
+return home2014WorldCupFinal;
+}
+console.log(getHtN2014(fifaData))
 console.log()
 console.log()
 console.log()
